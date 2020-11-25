@@ -2,6 +2,7 @@
 html,
 body {
     margin: 0%;
+    padding: 0;
     height: 100%;
 }
 /* Font */
@@ -17,28 +18,52 @@ nav {
 /* End of NavBar */
 
 
+/* Form */
+ul,
+li {
+    list-style: none;
+}
+
+label{
+
+}
+
+ /* End of Form */ 
 
 /* Footer */
 footer {
     color: ivory;
-    font-weight: 700;
+    
     position: fixed;
     height: auto;
     bottom: 0;
     width: 100%;
+    background-color: #343A40;
   
 
 }
 
-
-
 footer li {
    text-align: center;
     letter-spacing: initial;
-    display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 /* End of footer */
 
 /* Image et pictogramme */
+
+
+
+/* Media */
+@media screen and (max-width: 576px) {
+
+    #SkillsLeft,
+    #SkillsRight {
+        width: 100%;
+    }
+
+    #BlockExperiences {
+        background-color: #17a3b81a;
+    }
+}
