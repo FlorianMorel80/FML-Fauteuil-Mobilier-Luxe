@@ -1,0 +1,44 @@
+
+html,
+body {
+    margin: 0%;
+    height: 100%;
+}
+/* Font */
+
+/* End of Font */
+
+/* NavBar */
+nav {
+
+    letter-spacing: .6vh;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+/* End of NavBar */
+
+
+
+/* Footer */
+footer {
+    color: ivory;
+    font-weight: 700;
+    position: fixed;
+    height: auto;
+    bottom: 0;
+    width: 100%;
+  
+
+}
+
+
+
+footer li {
+   text-align: center;
+    letter-spacing: initial;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* End of footer */
+
+/* Image et pictogramme */
