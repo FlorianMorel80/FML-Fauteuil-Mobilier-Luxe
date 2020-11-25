@@ -1,68 +1,84 @@
-
 html,
 body {
     margin: 0%;
     padding: 0;
     height: 100%;
 }
+
+
 /* Font */
+
 
 /* End of Font */
 
-/* NavBar */
-nav {
 
+/* Category */
+
+.categorie-container a {
+    text-decoration: none;
+}
+
+.categorie-container h2 {
+    font-size: 1.2rem;
+}
+
+
+/* End of Category */
+
+
+/* NavBar */
+
+nav {
     letter-spacing: .6vh;
     background-color: rgba(128, 128, 128, 0.459);
 }
+
+
 /* End of NavBar */
 
 
 /* Form */
+
 ul,
 li {
     list-style: none;
 }
 
-label{
 
-}
+/* End of Form */
 
- /* End of Form */ 
 
 /* Footer */
+
 footer {
     color: ivory;
-    
-    position: fixed;
     height: auto;
     bottom: 0;
     width: 100%;
     background-color: #343A40;
-  
-
 }
 
 footer li {
-   text-align: center;
+    text-align: center;
     letter-spacing: initial;
     align-items: flex-start;
     justify-content: center;
 }
+
+
 /* End of footer */
+
 
 /* Image et pictogramme */
 
 
-
 /* Media */
-@media screen and (max-width: 576px) {
 
+@media screen and (max-width: 576px) {
     #SkillsLeft,
     #SkillsRight {
         width: 100%;
     }
-
     #BlockExperiences {
         background-color: #17a3b81a;
     }
