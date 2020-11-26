@@ -1,18 +1,47 @@
 html,
 body {
-    margin: 0%;
+    margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+}
+
+h1, h2,h3{
+    text-align: center;
 }
 
 
-/* Font */
+
+/**************************** HEADER ***************************/
+
+header a {
+    color: ivory;
+    text-decoration: none !important;
+    letter-spacing: .6vh;
+}
+
+header a:hover{
+    color: ivory;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+}
 
 
-/* End of Font */
+
+/************************ END OF HEADER ************************ */
 
 
-/* Category */
+
+
+
+/**************************** Font *************************/
+/*********************** End of Font ************************/
+
+
+/************************* Category *************************/
 
 .categorie-container a {
     text-decoration: none;
@@ -22,37 +51,36 @@ body {
     font-size: 1.2rem;
 }
 
-
-/* End of Category */
-
-
-/* NavBar */
-
-nav {
-    letter-spacing: .6vh;
-    background-color: rgba(128, 128, 128, 0.459);
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-/* End of NavBar */
+
+/************************** End of Category *******************/
 
 
-/* Form */
+
+
+/***************************** Form *****************************/
 
 ul,
 li {
     list-style: none;
 }
 
+/************************ End of Form ****************************/
 
-/* End of Form */
+
+
+
 
 
 /* Footer */
 
 footer {
     color: ivory;
-    height: auto;
     bottom: 0;
     width: 100%;
     background-color: #343A40;
@@ -65,6 +93,16 @@ footer li {
     justify-content: center;
 }
 
+footer h6 {
+    text-align: center;
+}
+
+.page-footer a {
+    color: ivory;
+    text-decoration: none !important;
+}
+
+
 
 /* End of footer */
 
@@ -74,11 +112,15 @@ footer li {
 
 /* Media */
 
-@media screen and (max-width: 576px) {
-    #SkillsLeft,
-    #SkillsRight {
-        width: 100%;
+@media screen and (max-width: 1086px) {
+
+    .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column !important;
     }
+    }
+
     #BlockExperiences {
         background-color: #17a3b81a;
     }
