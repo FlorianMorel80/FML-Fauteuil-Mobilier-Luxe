@@ -17,7 +17,7 @@ h1, h2,h3{
 header a {
     color: ivory;
     text-decoration: none !important;
-    letter-spacing: .6vh;
+    letter-spacing: 0.7vh ;
 }
 
 header a:hover{
@@ -103,43 +103,16 @@ li {
   .form-dark input[type=password]:focus:not([readonly]) + label {
     color: #fff; }
   
-  .form-dark input[type="checkbox"] + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 17px;
-    height: 17px;
-    z-index: 0;
-    border: 1.5px solid #fff;
-    border-radius: 1px;
-    margin-top: 2px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-  
-  .form-dark input[type="checkbox"]:checked + label:before {
-    top: -4px;
-    left: -3px;
-    width: 12px;
-    height: 22px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: transparent #00c851 #00c851 transparent;
-    -webkit-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; }
   
   .form-dark .modal-header {
       border-bottom: none;
   }
 
-  #registerForm label, p{
+  #registerForm label{
       font-weight: bolder;
   }
+      
+  
 
 
 
@@ -151,7 +124,17 @@ li {
 /************************ End of Form ****************************/
 
 
-
+/******************************* Modal Contact Us *********************************/
+#contactUs {
+  background-image: url(https://alexanderzhukovsky.com/wp-content/uploads/2017/05/Atlas-Chairs.gif);
+  font-weight: bold;
+}
+#btnContactUs {
+  background-color: rgb(85, 197, 231);
+  display: flex;
+  font-weight: bold;
+}
+/******************************* End of Modal Contact Us *********************************/
 
 
 
