@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="assets/css/animation.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>FML - Fauteul Mobilier Luxe </title>
+  <title>Créer mon compte - FML - Fauteul Mobilier Luxe </title>
 </head>
 
 <body>
@@ -41,7 +41,8 @@
               </li>
               <li class="nav-item px-5 d-flex justify-content-flex-end">
                 <a class="nav-link pr-5" href="#">S'inscrire</a>
-                <a class="nav-link pl-5" data-toggle="modal" data-target="#registerForm" href="#registerForm">Se connecter</a>
+                <a class="nav-link pl-5" data-toggle="modal" data-target="#registerForm" href="#registerForm">Se
+                  connecter</a>
               </li>
             </ul>
           </div>
@@ -62,7 +63,7 @@
     <h1>Fauteuil Mobilier Luxe</h1>
     <h2>Inscription - Je suis un professionnel</h2>
     <!-- Formulaire d'inscription Professionnel -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="blockProfessionnel">
       <div class="row col-12 d-flex justify-content-center py-5">
         <form>
           <div class="form-group">
@@ -108,26 +109,26 @@
               <input type="email" class="form-control" id="inputEmail4">
             </div>
           </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Mot de passe*</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputVerificationPassword">Valider le mot de passe*</label>
-                <input type="password" class="form-control" id="inputEmail4">
-              </div>
-             
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Mot de passe*</label>
+              <input type="password" class="form-control" id="inputPassword4">
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Vérifier
-                </label>
-              </div>
+            <div class="form-group col-md-6">
+              <label for="inputVerificationPassword">Valider le mot de passe*</label>
+              <input type="password" class="form-control" id="inputEmail4">
             </div>
-            <button type="submit" class="btn btn-primary ">Créer mon compte</button>
+
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Vérifier
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary ">Créer mon compte</button>
         </form>
       </div>
     </div>
@@ -136,22 +137,22 @@
     <!-- Formulaire d'inscription Particulier -->
     <h2>Inscription - Je suis un particulier</h2>
     <!-- Formulaire d'inscription Professionnel -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="blockParticulier">
       <div class="row col-12 d-flex justify-content-center py-5">
         <form>
           <div class="form-group">
-            <label for="inputAddress">Adresse*</label>
-            <input type="text" class="form-control" id="inputAddress">
+            <label for="inputAddressRegistration">Adresse*</label>
+            <input type="text" class="form-control" id="inputAddressRegistration">
           </div>
           <div class="form-group">
             <div class="form-row">
               <div class="form-group col-md-5">
-                <label for="inputCity">Ville*</label>
-                <input type="text" class="form-control" id="inputCity">
+                <label for="inputCityRegistration">Ville*</label>
+                <input type="text" class="form-control" id="inputCityRegistration">
               </div>
               <div class="form-group col-md-4">
-                <label for="inputState">Pays*</label>
-                <select id="inputState" class="form-control">
+                <label for="inputStateRegistration">Pays*</label>
+                <select id="inputStateRegistration" class="form-control">
                   <option selected>Choose...</option>
                   <option selected>Belgique</option>
                   <option selected>France</option>
@@ -159,37 +160,37 @@
                 </select>
               </div>
               <div class="form-group col-md-3">
-                <label for="postal">Code postal*</label>
-                <input type="text" class="form-control" id="postal">
+                <label for="postalRegistration">Code postal*</label>
+                <input type="text" class="form-control" id="postalRegistration">
               </div>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <label for="inputEmail">Mail*</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <label for="inputEmailRegistration">Mail*</label>
+              <input type="email" class="form-control" id="inputEmailRegistration">
             </div>
           </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Mot de passe*</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputVerificationPassword">Valider le mot de passe*</label>
-                <input type="password" class="form-control" id="inputEmail4">
-              </div>
-             
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputPasswordRegistration">Mot de passe*</label>
+              <input type="password" class="form-control" id="inputPasswordRegistration">
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Vérifier
-                </label>
-              </div>
+            <div class="form-group col-md-6">
+              <label for="inputVerificationPassword">Valider le mot de passe*</label>
+              <input type="password" class="form-control" id="inputVerificationPassword">
             </div>
-            <button type="submit" class="btn btn-primary">Créer mon compte</button>
+
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Vérifier
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Créer mon compte</button>
         </form>
       </div>
     </div>
