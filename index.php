@@ -23,75 +23,89 @@
 
   <main role="main">
 
-    <header>
+<?php @include 'nav.php'; ?>
 
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark pt-4 col-12">
-            <div class="container">
-              <div class="row col-12">
-                <div class="col-4">
-                  <h4 class="text-white">FML - Fauteuil Mobilier Luxe</h4>
-                  <span class="text-muted text-center">Faites de votre maison un lieu unique</span>
-                </div>
-                <div class="col-8">
-                  <ul class="navbar-nav">
-                    <li class="nav-item px-5">
-                      <a class="nav-link " href="#">Catégories</a>
-                    </li>
-                    <li class="nav-item px-5">
-                      <a class="nav-link" href="#">Designer</a>
-                    </li>
-                    <li class="nav-item px-5" class=>
-                      <a class="nav-link" href="#">Style</a>
-                    </li>
-                    <li class="nav-item px-5 d-flex justify-content-flex-end">
-                      <a class="nav-link pr-5" href="registrationForm.html">S'inscrire</a>
-                      <a class="nav-link pl-5" data-toggle="modal" data-target="#registerForm" href="#registerForm">Se
-                        connecter</a>
-                    </li>
-                  </ul>
+<!-- Register Form -->
+    <!-- Modal -->
+    <div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog form-dark" role="document">
+        <!--Content-->
+        <div class="modal-content card card-image"
+          style="background-image: url('https://cdn.pixabay.com/photo/2016/01/26/11/09/design-1162241_960_720.jpg');"
+          style="opacity: 0.7;">
+          <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+            <!--Header-->
+            <div class="modal-header text-center pb-4">
+              <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>CONNEXION</strong>
+              </h3>
+              <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+              <!--Body-->
+              <div class="md-form mb-3">
+                <label data-error="wrong" data-success="right" for="Form-email5">E-Mail</label>
+                <input type="email" id="Form-email5" class="form-control validate white-text">
+
+              </div>
+
+              <div class="md-form mb-3">
+                <label data-error="wrong" data-success="right" for="Form-pass5">Votre mot de passe</label>
+                <input type="password" id="Form-pass5" class="form-control validate white-text">
+
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                    <p class="font-small white-text d-flex justify-content-end"> <a href=""
+                        class="green-text ml- font-weight-bold">
+                        Mot de passe oublié ?</a></p>
+                  </div>
+                  <!--Grid column-->
+
                 </div>
               </div>
+
+              <!--Grid row-->
+              <div class="row d-flex align-items-center mb-4">
+
+                <!--Grid column-->
+                <div class="text-center mb-3 col-md-12">
+                  <button type="button" class="btn btn-warning btn-block btn-rounded z-depth-1">Se connecter</button>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+                  <p class="font-small white-text d-flex justify-content-end">Pas encore inscrit ? <a
+                      href="registrationForm.html" class="green-text ml- font-weight-bold">
+                      Créer un compte</a></p>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
             </div>
           </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="breadcrumb">
-            <span class="navbar-toggler-icon"></span>
-
-          </button>
-        </nav>
-
+        <!--/.Content-->
       </div>
-    </header>
-
-
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-                <div class="collapse navbar-collapse col-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center px-5 my-3" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" href="#">Catégories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" href="#">Marques</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-5" href="#">Designer</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-flex-end">
-                            <a class="nav-link mx-5" href="#">S'inscrire</a>
-                            <a class="nav-link mx-5" href="#">Mon compte</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
-
+    </div>
+    <!-- Modal -->
+    <div class="text-center">
+      <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#registerForm"></a>
+    </div>
+<!-- End Of Register Form -->
 
 
 
@@ -100,7 +114,7 @@
     <!-- fin de l'image séparé en deux -->
 
 
-    <!-- Card Product--->
+<!-- Card Product--->
     <h1 class="text-center mt-4">Bureaux </h1>
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -266,96 +280,16 @@
 
       </div>
     </div>
-    <!-- End of Card Product -->
+<!-- End of Card Product -->
 
 
 
 
 
-    <!-- Register Form -->
-    <!-- Modal -->
-    <div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog form-dark" role="document">
-        <!--Content-->
-        <div class="modal-content card card-image"
-          style="background-image: url('https://cdn.pixabay.com/photo/2016/01/26/11/09/design-1162241_960_720.jpg');"
-          style="opacity: 0.7;">
-          <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-            <!--Header-->
-            <div class="modal-header text-center pb-4">
-              <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>CONNEXION</strong>
-              </h3>
-              <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <!--Body-->
-            <div class="modal-body">
-              <!--Body-->
-              <div class="md-form mb-3">
-                <label data-error="wrong" data-success="right" for="Form-email5">E-Mail</label>
-                <input type="email" id="Form-email5" class="form-control validate white-text">
-
-              </div>
-
-              <div class="md-form mb-3">
-                <label data-error="wrong" data-success="right" for="Form-pass5">Votre mot de passe</label>
-                <input type="password" id="Form-pass5" class="form-control validate white-text">
-
-                <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-                    <p class="font-small white-text d-flex justify-content-end"> <a href=""
-                        class="green-text ml- font-weight-bold">
-                        Mot de passe oublié ?</a></p>
-                  </div>
-                  <!--Grid column-->
-
-                </div>
-              </div>
-
-              <!--Grid row-->
-              <div class="row d-flex align-items-center mb-4">
-
-                <!--Grid column-->
-                <div class="text-center mb-3 col-md-12">
-                  <button type="button" class="btn btn-warning btn-block btn-rounded z-depth-1">Se connecter</button>
-                </div>
-                <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-12">
-                  <p class="font-small white-text d-flex justify-content-end">Pas encore inscrit ? <a
-                      href="registrationForm.html" class="green-text ml- font-weight-bold">
-                      Créer un compte</a></p>
-                </div>
-                <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-            </div>
-          </div>
-        </div>
-        <!--/.Content-->
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="text-center">
-      <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#registerForm"></a>
-    </div>
-    <!-- End Of Register Form -->
+    
 
 
-    <!-- Aide -->
+<!-- Aide -->
     <!-- Modal -->
     <div class="container">
       <div class="row">
@@ -384,12 +318,12 @@
       </div>
     </div>
     <!-- Modal -->
-    <!-- Aide -->
+<!-- Aide -->
 
 
 
 
-    <!-- Contact Form -->
+<!-- Contact Form -->
     <!-- Modal -->
     <div class="container">
       <div class="row col-12">
@@ -446,140 +380,10 @@
       </div>
     </div>
     <!-- Modal -->
-    <!-- End of Contact Form -->
+<!-- End of Contact Form -->
 
 
-    <!-- Footer -->
-
-    <footer class=" page-footer font-small unique-color-dark ">
-
-
-
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left mt-5 ">
-
-        <!-- Grid row -->
-        <div class="row mt-3 text-center ">
-
-          <!-- Grid column -->
-          <div class="col-12 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
-
-            <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold ">FML - Fauteuil Mobilier Luxe</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
-            <p>Ce site est réalisé dans le cadre du titre de Developpeur Web et Web Mobile à l'école
-              La Manu à Amiens et n'a pas de vocation commercial. </p>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
-
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold ">AIDE</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
-            <p>
-              <a href="#modalHelp" data-toggle="modal" data-target="#modalHelp">Comment acheter ? </a>
-            </p>
-            <p>
-              <a href="#modalHelp" data-toggle="modal" data-target="#modalHelp">Comment vendre ?</a>
-            </p>
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
-
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold ">Collection</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
-            <p>
-              <a href="#! ">Catégories</a>
-            </p>
-            <p>
-              <a href="#! ">Designers</a>
-            </p>
-            <p>
-              <a href="#! ">Styles</a>
-            </p>
-
-
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
-
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold ">Contact</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
-            <p>
-              <a class="nav-link" data-toggle="modal" data-target="#contactUs" href="">Contactez-nous</a></p>
-
-
-          </div>
-          <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-      </div>
-      <!-- Footer Links -->
-      <div style="background-color: #343A40; ">
-        <div class="container ">
-
-          <!-- Grid row-->
-          <div class="row py-1 d-flex align-items-center ">
-
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-9 text-center text-md-left mb-2 mb-md-0 ">
-              <h6 class="mb-0 ">Suivez-nous sur les réseaux sociaux :</h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-7 text-center text-md-right ">
-
-              <!-- Facebook -->
-              <a class="fb-ic ">
-                <i class="fab fa-facebook-f white-text mr-4 "> </i>
-              </a>
-              <!-- Twitter -->
-              <a class="tw-ic ">
-                <i class="fab fa-twitter white-text mr-4 "> </i>
-              </a>
-              <!-- Google +-->
-              <a class="gplus-ic ">
-                <i class="fab fa-google-plus-g white-text mr-4 "> </i>
-              </a>
-              <!--Linkedin -->
-              <a class="li-ic ">
-                <i class="fab fa-linkedin-in white-text mr-4 "> </i>
-              </a>
-              <!--Instagram-->
-              <a class="ins-ic ">
-                <i class="fab fa-instagram white-text "> </i>
-              </a>
-
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!-- Grid row-->
-
-        </div>
-      </div>
-      <!-- Copyright -->
-      <div class="footer-copyright text-center pt-2 ">© 2020 Copyright:
-        <a href="https://github.com/FlorianMorel80 "> Florian Morel</a>
-      </div>
-      <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-    <!-- End of Footer -->
+  <?php @include 'footer.php' ?>
   </main>
 
 
